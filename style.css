@@ -54,6 +54,51 @@ nav ul li a:hover {
     border-radius: 13px;
 }
 
+
+/* Mặc định menu của bạn giữ nguyên cho PC */
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+/* Ẩn nút hamburger mặc định */
+.menu-toggle {
+    display: none;
+}
+
+/* Khi màn hình nhỏ hơn 768px mới thay đổi */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block; /* hiện nút hamburger */
+  }
+  
+  nav ul {
+    flex-direction: column;  /* chuyển menu thành cột */
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    background: rgba(35, 34, 34, 0.9);
+  }
+  
+  nav ul.show {
+    max-height: 500px;
+  }
+  
+  nav ul li {
+    margin: 10px 0;
+    text-align: center;
+  }
+  
+  nav ul li a {
+    padding: 12px;
+    display: block;
+    font-size: 18px;
+  }
+}
+
+
 /* Khoảng trống cho nội dung khi header fixed */
 .section {
     padding: 55px 20px;
@@ -185,4 +230,5 @@ footer {
 
 
 }
+
 
