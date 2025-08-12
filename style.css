@@ -93,7 +93,7 @@ nav ul li a:hover {
 
 .avatar {
     /* độ to avatar */
-    width: 200px;
+    width: auto;
     height: 200px;
     /* bo góc */
     border-radius: 100%;
@@ -182,5 +182,6 @@ footer {
     text-align: center;
     padding: 10px;
     /* độ bự */
+
 
 }
