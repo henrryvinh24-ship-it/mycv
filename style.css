@@ -42,7 +42,7 @@ nav ul li a {
     color: white;
     text-decoration: none;
     /* bỏ hiệu ứng đặc biệt là gạch chân */
-    padding: 15px 30px;
+    padding: 15px 14px;
     font-weight: bold;
     /* in đậm bold: tiêu chuẩn */
     transition: background 0.3s, color 0.3s;
@@ -53,7 +53,6 @@ nav ul li a:hover {
     color: #444242;
     border-radius: 13px;
 }
-
 
 /* Mặc định menu của bạn giữ nguyên cho PC */
 nav ul {
@@ -72,8 +71,8 @@ nav ul {
     user-select: none;
 }
 
-/* Khi màn hình nhỏ hơn 768px mới thay đổi */
-@media (max-width: 768px) {
+/* Khi màn hình nhỏ hơn 750px mới thay đổi */
+@media (max-width: 750px) {
   .menu-toggle {
     display: block; /* hiện nút hamburger */
   }
@@ -103,10 +102,10 @@ nav ul {
   }
 }
 
-
 /* Khoảng trống cho nội dung khi header fixed */
 .section {
     padding: 55px 20px;
+    margin-bottom: 20px;
     max-width: 1000px;
     margin: auto;
     /* hiệu ứng chữ nhảy ra trong 0.8s  */
@@ -128,8 +127,8 @@ nav ul {
     /* background chuyển màu */
     background: linear-gradient(150deg, #eedde7, #312ee4);
     color: white;
-    padding: 110px 10px;
-    /* độ bự khu vực trang chủ là 140 */
+    padding: 120px 10px;
+    /* độ bự khu vực trang chủ là 120 */
 
 }
 .home-section h1 {
@@ -140,6 +139,9 @@ nav ul {
     font-size: 20px;
 }
 
+.DSSởThích {
+    font-size: 18px;
+}
 
 .avatar {
     /* độ to avatar */
@@ -203,10 +205,44 @@ nav ul {
     border-radius: 5%;
 }
 
+#KiếnThứcVềLậpTrình {
+  margin: 40px auto;
+  padding: 20px;
+  border-radius: 10px;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+#KiếnThứcVềLậpTrình ul {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+#KiếnThứcVềLậpTrình img {
+  width: 300px;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s;
+  margin: 0 auto;
+}
+
+#KiếnThứcVềLậpTrình img:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 750px) {
+  #KiếnThứcVềLậpTrình img {
+    width: 100%;
+    height: auto;
+    margin: 10px 0;
+  }
+}
+
 #LiênHệ {
   text-align: center;
   padding: 50px 20px;
   background-color: #f5f5f5;
+  font-size: 32px;
 }
 
 .contact-icons {
@@ -214,6 +250,7 @@ nav ul {
   justify-content: center;
   gap: 70px;
   margin-top: 40px;
+  font-size: 32px;
 }
 
 .contact-icons img {
@@ -233,8 +270,4 @@ footer {
     padding: 10px;
     /* độ bự */
 
-
 }
-
-
-
