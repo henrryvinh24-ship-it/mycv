@@ -65,6 +65,11 @@ nav ul {
 /* Ẩn nút hamburger mặc định */
 .menu-toggle {
     display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+    padding: 15px 20px;
+    user-select: none;
 }
 
 /* Khi màn hình nhỏ hơn 768px mới thay đổi */
@@ -230,5 +235,6 @@ footer {
 
 
 }
+
 
 
