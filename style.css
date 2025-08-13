@@ -248,8 +248,8 @@ h2 {
 .icons {
   display: flex;
   justify-content: center;
-  gap: 50px;
-  margin-top: 30px;
+  gap: 70px;
+  margin-top: 40px;
 }
 
 .icons img {
@@ -270,3 +270,4 @@ footer {
     /* độ bự */
 
 }
+
