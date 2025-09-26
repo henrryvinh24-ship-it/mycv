@@ -1,0 +1,16 @@
+name: CI Test
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Lấy code từ repo
+        uses: actions/checkout@v3
+
+      - name: Chạy lệnh test
+        run: echo "Hello Vinh, CI/CD đã chạy thành công 🚀"
+
